@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Devicons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Open+Sans" rel="stylesheet">
+    <!-- Main styles -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Tom Eloe | Web Developer</title>
+  </head>
+  <body>
+    
+    <!-- Side Nav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="nav-items">
+        <a href="#" class="avatar nav-link">
+          <img class="" src="./img/avatar.jpg" alt="Me and my wife, Natalie">
+        </a>
+        <div class="name">
+          <h4 class="mb-0 font-weight-bold">Tom Eloe</h4>
+          <p style="font-size: 0.75rem;">Web Developer</p>
+        </div>
+        
+        <a href="#about" class="nav-link about-me">
+          <i class="fas fa-book"></i>
+          about me
+        </a>
+        <a href="#projects" class="nav-link projects">
+          <i class="fas fa-cog"></i>
+          projects
+        </a>
+        <a href="#experience" class="nav-link experience">
+          <i class="fas fa-briefcase"></i>
+          experience
+        </a>
+        <a href="#contact" class="nav-link contact">
+          <i class="fas fa-envelope"></i>
+          contact
+        </a>
+      </div>
+      
+      <div class="bottom">
+        <a href="mailto:tomeloe@gmail.com" target="_blank" class="contact-btn pl-0">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tomeloe" target="_blank" class="contact-btn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/teloe" target="_blank" class="contact-btn">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </div>
+    <div class="menu-wrapper">
+      <span class="menu container" onclick="openNav()">&#9776; menu</span>
+    </div>
+    
+    
+    <!-- Header -->
+    <div class="header">
+      <div class="header-wrapper">
+        <h2 class="blurb container pt-5">Hey, I'm Tom. I'm a software developer based in Porter Ranch, CA. I focus on front-end web development and creating an awesome user experience.</h2>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- About Me -->
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title text-center">About me</h2>
+          <p>I constantly question how to make things better. This is why I’m fascinated with programming. It gives me the opportunity to continuously improve and create things that matter. Consequently, I decided to change careers from insurance to software engineering. Having attended a coding boot camp and worked as a developer at a startup, I have acquired a foundation of knowledge from which to build upon.</p>
+          <p>As a web developer, I love that I get to use my creativity, attention to detail, and problem-solving abilities. I consider myself a lifelong learner and enjoy using my technical skills to produce software that has the potential to improve the lives of others.</p>
+          <p>I am seeking new opportunities where I can make a big impact and demonstrate my value.</p>
+        </div>
+      </section>
+      
+      <!-- Projects -->
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title text-center">Projects</h2>
+          <p>I love learning new things and taking on new challenges. Working on projects is one of my favorite ways to learn and improve my skill set. Check out some of my recent work.</p>
+          <div class="d-flex project-container">
+            <a href="https://teloe.me/agency_lp/" target="_blank" class="project-link">
+              <img src="./img/agencylp.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">Insurance Agency Landing Page</h6>
+                <p class="project-description">A landing page template for an insurance agency built using Sass, Bootstrap, Slick.js plugin, and HTML.</p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-bootstrap-plain"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/teloe/rails_crypto" target="_blank" class="project-link">
+              <img src="./img/crypto.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">Crypto Currency Portfolio</h6>
+                <p class="project-description">Ruby on Rails application that allows users to view real-time pricing of cryptocurrencies and track their total gain/ loss on investment. Built using Bootstrap 3 framework and the Coin Market Cap API.</p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-bootstrap-plain"></i>
+                  <i class="devicon-rails-plain-wordmark"></i>
+                </div>
+              </div>  
+            </a>
+            <a href="https://github.com/teloe/to_do_list" target="_blank" class="project-link">
+              <img src="./img/todo.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">Django To-Do List</h6>
+                <p class="project-description">Django To-Do List app that implements CRUD operations with users allowing them to create, read, update and delete lists and save them to a database. Uses Bootstrap framework for styling.</p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-bootstrap-plain"></i>
+                  <i class="devicon-python-plain-wordmark"></i>
+                  <i class="devicon-django-plain"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/teloe/guacguy.com" target="_blank" class="project-link">
+              <img src="./img/guacguy.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">GuacGuy.com</h6>
+                <p class="project-description">Ruby on Rails e-commerce application where I plan to sell my awesome guacamole. Built using Spree e-commerce platform, Stripe API, and various other gems.</p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">  
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-bootstrap-plain"></i>
+                  <i class="devicon-rails-plain-wordmark"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://teloe.me/vue-flashcards/" target="_blank" class="project-link">
+              <img src="./img/flashcards.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">Vue Flashcards</h6>
+                <p class="project-description">Flashcards that flip when users click on each card, displaying different information on each side of the card. Users can also add new flashcards and delete existing ones. Built with Vue.js, HTML, and CSS. </p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-vuejs-plain-wordmark"></i>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/teloe/markdown_editor" target="_blank" class="project-link">
+              <img src="./img/markdown.png">
+              <div class="project-top mt-auto">
+                <h6 class="project-title text-center">Markdown Preview</h6>
+                <p class="project-description">View raw markdown on the left side and the converted markdown (to HTML) on the right side. Built using Node for backend and Express as web application framework.</p>
+              </div>
+              <div class="project-bottom">
+                <p class="text-center" style="font-size: 0.6rem;">Technologies</p>
+                <div class="project-icons text-center pb-4">
+                  <i class="devicon-html5-plain-wordmark"></i>
+                  <i class="devicon-css3-plain-wordmark"></i>
+                  <i class="devicon-javascript-plain"></i>
+                  <i class="devicon-express-original"></i>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </section>
+      <!-- Experience -->
+      <section id="experience">
+        <div class="container">
+          <h2 class="section-title text-center">Experience</h2>
+          <h4 class="mb-5">Skills</h4>
+          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+          <ul class="list-inline dev-icons mb-5">
+            <li class="list-inline-item">
+              <i class="devicon-html5-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-css3-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-javascript-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-jquery-plain-wordmark"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-sass-original"></i>
+            </li>
+            
+            <li class="list-inline-item">
+              <i class="devicon-bootstrap-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-gulp-plain"></i>
+            </li>
+            <li class="list-inline-item">
+              <i class="devicon-rails-plain-wordmark"></i>
+            </li>
+          </ul>
+          <h4 class="mb-5">Work Experience</h4>
+          
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Software Developer</h5>
+              <div class="subheading mb-3">CherryTree, Inc.</div>
+              <p class="text-muted">Developed company website from scratch using Ruby on Rails and various gems.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">April 2018 - Oct 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Student/ Resident</h5>
+              <div class="subheading mb-3">Coding Dojo</div>
+              <p class="text-muted">Completed 14 week immersive training program, gaining over 1000 hours of intensive coding experience.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">Aug 2017 - Apr 2018</span>
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">Agency Manager</h5>
+              <div class="subheading mb-3">Allstate, La Crescenta Insurance Services, Inc.</div>
+              <p class="text-muted">Directed sales campaigns which resulted in agency becoming the top Allstate commercial lines producer in CA.</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">May 2015 - Aug 2017</span>
+            </div>
+          </div>
+          <h4 class="mb-5">Education</h4>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h5 class="mb-0">San Diego State University</h5>
+              <div class="subheading mb-3">Bachelor of Science</div>
+              <p class="text-muted">Psychology</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-muted">Dec 2009</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container">
+          <h2 class="section-title text-center">Get in touch</h2>
+          <p class="text-center mb-0">I'm currently looking for new opportunities. </p>
+          <p class="text-center">Please contact me if you like my work.</p>
+          <div class="get-in-touch">
+
+            <!-- TODO: buttons outline -->
+            <a href="mailto:tomeloe@gmail.com" target="_blank" class="btn email contact-link">
+              <i class="fas fa-envelope"></i>
+              email
+            </a>
+            <a href="https://www.linkedin.com/in/tomeloe" target="_blank" class="btn linkedin contact-link">
+              <i class="fab fa-linkedin-in"></i>
+              tomeloe
+            </a>
+            <a href="https://github.com/teloe" target="_blank" class="btn github contact-link">
+              <i class="fab fa-github"></i>
+              teloe
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="py-4 text-center">
+        <p class="mb-0">&copy; 2018 Tom Eloe</p>
+      </footer>
+      
+    </div>
+    
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous">
+    </script>
+    <!-- Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+    <!-- Boostrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+    <!-- Main JS -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>

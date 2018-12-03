@@ -1,0 +1,86 @@
+// ========================================
+// Button Styles
+// ========================================
+
+a.project-link {
+  color: $section-title;
+  display: flex !important;
+  flex-direction: column;
+  flex: 1 33.33%;
+  text-decoration: none;
+  display: block;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+  // Scaled down original size to prevent blur on zoom :/ 
+  transform: scale(0.9);
+  &:hover {
+    transform: scale(1);
+  }
+  img {
+    border-radius: 4px;
+    width: 100%;
+  }
+  .project-title {
+    padding: 1rem 0;
+  }
+  .project-bottom {
+    margin-top: auto;
+  }
+  i {
+    padding: 0 0.2rem;
+    color: #3F729B;
+    font-size: 1.6rem;
+  }
+}
+
+.project-description {
+  display: block;
+  margin: auto;
+  padding: 0 1rem 1rem;
+  width: 240px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+a.contact-link {
+  text-decoration: none;
+  width: 180px;
+  border-radius: 40px;
+  display: block;
+  margin: 0 auto 20px;
+  text-align: center;
+  transition: 0.2s;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.email {
+  text-decoration: none;
+  border: solid 1px #008081;
+  color: #008081;
+  &:hover {
+    background-color: #008081;
+    color: #fff;
+  }
+}
+
+.linkedin {
+  text-decoration: none;
+  border: solid 1px #007bb5;
+  color: #007bb5;
+  &:hover {
+    background-color: #007bb5;
+    color: #fff;
+  }
+}
+
+.github {
+  text-decoration: none;
+  border: solid 1px #333;
+  color: #333;
+  &:hover {
+    background-color: #333;
+    color: #fff;
+  }
+}
