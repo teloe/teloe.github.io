@@ -5,7 +5,7 @@
 .header {
   color: $off-white;
   width: 100%;
-  min-height: 500px;
+  min-height: 520px;
   content: "";
   display: block;
   position: fixed;
@@ -20,7 +20,7 @@
   -o-background-size: cover;
   background-size: cover;
   .header-wrapper {
-    min-height: 500px;
+    min-height: 520px;
     display: flex;
     align-items: center;
     @include lg {
