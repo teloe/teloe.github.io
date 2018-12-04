@@ -44,26 +44,6 @@ a.project-link {
   text-align: center;
 }
 
-// a.contact-link {
-//   text-decoration: none;
-//   width: 180px;
-//   border-radius: 40px;
-//   display: block;
-//   margin: 0 auto 20px;
-//   text-align: center;
-//   transition: 0.2s;
-//   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
-// }
-
-// .email {
-//   text-decoration: none;
-//   border: solid 1px #008081;
-//   color: #008081;
-//   &:hover {
-//     background-color: #008081;
-//     color: #fff;
-//   }
-// }
 .btn {
   color: $sidebar-bg;
   border: solid 1px $sidebar-bg;
@@ -71,7 +51,6 @@ a.project-link {
   width: 180px;
   display: block;
   margin: 0 auto 20px;
-  // font-family: "Lucida Console", Monaco, monospace;
   font-size: 14px;
   letter-spacing: 1px;
   cursor: pointer;
@@ -85,24 +64,3 @@ a.project-link {
   color: #FFF;
   box-shadow: inset 400px 0 0 0 $sidebar-bg;
 }
-
-
-// .linkedin {
-//   text-decoration: none;
-//   border: solid 1px #007bb5;
-//   color: #007bb5;
-//   &:hover {
-//     background-color: #007bb5;
-//     color: #fff;
-//   }
-// }
-
-// .github {
-//   text-decoration: none;
-//   border: solid 1px #333;
-//   color: #333;
-//   &:hover {
-//     background-color: #333;
-//     color: #fff;
-//   }
-// }
