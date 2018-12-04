@@ -44,43 +44,65 @@ a.project-link {
   text-align: center;
 }
 
-a.contact-link {
-  text-decoration: none;
+// a.contact-link {
+//   text-decoration: none;
+//   width: 180px;
+//   border-radius: 40px;
+//   display: block;
+//   margin: 0 auto 20px;
+//   text-align: center;
+//   transition: 0.2s;
+//   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2);
+// }
+
+// .email {
+//   text-decoration: none;
+//   border: solid 1px #008081;
+//   color: #008081;
+//   &:hover {
+//     background-color: #008081;
+//     color: #fff;
+//   }
+// }
+.btn {
+  color: $sidebar-bg;
+  border: solid 1px $sidebar-bg;
+  // border-radius: 0;
   width: 180px;
-  border-radius: 40px;
   display: block;
   margin: 0 auto 20px;
-  text-align: center;
-  transition: 0.2s;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  // font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 $sidebar-bg;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 
-.email {
-  text-decoration: none;
-  border: solid 1px #008081;
-  color: #008081;
-  &:hover {
-    background-color: #008081;
-    color: #fff;
-  }
+.btn:hover {
+  color: #FFF;
+  box-shadow: inset 400px 0 0 0 $sidebar-bg;
 }
 
-.linkedin {
-  text-decoration: none;
-  border: solid 1px #007bb5;
-  color: #007bb5;
-  &:hover {
-    background-color: #007bb5;
-    color: #fff;
-  }
-}
 
-.github {
-  text-decoration: none;
-  border: solid 1px #333;
-  color: #333;
-  &:hover {
-    background-color: #333;
-    color: #fff;
-  }
-}
+// .linkedin {
+//   text-decoration: none;
+//   border: solid 1px #007bb5;
+//   color: #007bb5;
+//   &:hover {
+//     background-color: #007bb5;
+//     color: #fff;
+//   }
+// }
+
+// .github {
+//   text-decoration: none;
+//   border: solid 1px #333;
+//   color: #333;
+//   &:hover {
+//     background-color: #333;
+//     color: #fff;
+//   }
+// }
