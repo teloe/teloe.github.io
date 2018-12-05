@@ -13,7 +13,6 @@
   top: 0;
   z-index: -10;
   background: url('/img/header.png');
-  // background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -30,8 +29,5 @@
   .name {
     font-weight: bold;
     letter-spacing: -0.15rem;
-  }
-  .blurb {
-    
   }
 }
