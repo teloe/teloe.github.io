@@ -11,11 +11,7 @@
         'base/base';
 
 // Layout
-@import 'layout/header',
-        'layout/sections',
-        'layout/projects',
-        'layout/experience',
-        'layout/contact';
+@import 'layout/header';
 
 // Components
 @import 'components/buttons',

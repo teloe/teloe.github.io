@@ -3,25 +3,33 @@
 // ========================================
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: #212121;
 }
 
 body {
-  font-family: $font-stack-primary;
+    font-family: $font-stack-primary;
+    opacity: 1;
+    transition: 2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: $font-stack-header;
-  letter-spacing: -0.1rem;
+    font-family: $font-stack-header;
+    letter-spacing: -0.1rem;
 }
 
 .wrapper {
-  background: #fff;
-  margin-top: 520px;
-  @include lg {
-    padding-left: 250px;
-  }
+    background: #fff;
+    margin-top: 520px;
 }

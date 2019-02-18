@@ -1,14 +1,23 @@
 {
-  "name": "my_website",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "browser-sync start --directory --server --files \"**/*\""
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "browser-sync": "^2.26.3"
-  }
+    "name": "my_website",
+    "version": "1.0.0",
+    "description": "https://teloe.me/",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start --directory --server --files \"**/*\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.3"
+    },
+    "dependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/teloe/teloe.github.io.git"
+    },
+    "bugs": {
+        "url": "https://github.com/teloe/teloe.github.io/issues"
+    },
+    "homepage": "https://github.com/teloe/teloe.github.io#readme"
 }
