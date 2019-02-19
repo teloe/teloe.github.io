@@ -343,34 +343,42 @@ h4 {
   justify-content: center; }
 @keyframes fadeInUp {
   0% {
-    transform: translate3d(0, 16em, 0); }
+    transform: translate3d(0, 60px, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
   .header .box {
+    padding: 4em 2em 2.5em 2em;
+    width: 100%;
     margin: 0 auto;
-    padding: 4.5em 3em 2em 3em;
     background: #ffffff;
     border-radius: 4px;
     max-width: 100%;
     opacity: 0.95;
     position: relative;
     text-align: center;
-    width: 27em;
     animation: fadeInUp 2s; }
+    @media (min-width: 576px) {
+      .header .box {
+        padding: 4.5em 3em 2em 3em;
+        width: 27em; } }
   .header .avatar {
     border-radius: 4px;
     position: relative;
     display: block; }
     .header .avatar::before {
+      left: -2em;
+      width: calc(100% + 4em);
       content: '';
       display: block;
       position: absolute;
       top: 40%;
-      left: -3em;
-      width: calc(100% + 6em);
       height: 1px;
       z-index: -1;
       background: #c8cccf; }
+      @media (min-width: 576px) {
+        .header .avatar::before {
+          left: -3em;
+          width: calc(100% + 6em); } }
     .header .avatar img {
       box-shadow: 0 0 0 1.5em #fff;
       border-radius: 4px; }
