@@ -263,9 +263,9 @@ section {
             }
         }
         a {
-            color: $light-blue;
-            text-transform: uppercase;
-            font-size: 1.2rem;
+            // color: $light-blue;
+            // text-transform: uppercase;
+            // font-size: 1.2rem;
             &.project-link {
                 display: block;
                 margin-bottom: 2rem;
@@ -284,11 +284,11 @@ section {
             }
         }
     }
-    a {
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+    // a {
+        // &:hover {
+            // text-decoration: underline;
+        // }
+    // }
 }
 
 // }}}

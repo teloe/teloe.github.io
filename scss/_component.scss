@@ -34,6 +34,42 @@ button.gradient-btn {
     }
 }
 
+.project-links {
+    margin-top: 1rem;
+    .project-btn {
+        display:inline-block;
+        text-transform: uppercase;
+        font-family: $alt-stack;
+        color: $dark-blue;
+        position: relative;
+        padding: .25rem;
+        font-size: 1.2rem;
+        z-index: 1;
+        transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        &:first-of-type {
+            margin-bottom: 1rem;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $dark-blue;
+            z-index: -1;
+            transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        }
+        &:hover {
+            text-decoration:none!important;
+            color: $text-base;
+            &::after {
+                height: 100%;
+            }
+        }
+    }
+}
+
 // Social
 .social {
     a {
