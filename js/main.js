@@ -1,90 +1,56 @@
-// Fade in page
-$(function() {
-    $('body').removeClass('fade-out');
+jQuery(document).ready(function ($) {
+    // Open/ close menu
+    $('.menu-toggle').on('click', function () {
+        $(this).toggleClass('active');
+        $('nav').toggleClass('open');
+        $('.close-overlay').toggleClass('active');
+    });
+
+    function closeMenu() {
+        $('.menu-toggle').removeClass('active');
+        $('nav').removeClass('open');
+        $('.close-overlay').removeClass('active');
+    }
+    closeMenu();
+
+    $('.close-overlay, nav a').on('click', closeMenu);
+
+    $(document).keyup(function (e) {
+        if (e.keyCode === 27) {
+            return closeMenu();
+        }
+    });
+
+    $('main section:first-of-type').addClass('active');
+
+    $('nav a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        const id = $(this).attr('href');
+        $('section' + id)
+            .addClass('active')
+            .siblings()
+            .removeClass('active');
+    });
+
+    $('header a[href="#home"]').on('click', function (e) {
+        e.preventDefault();
+        $('section#home').addClass('active').siblings().removeClass('active');
+    });
+
+    // $('#year').text(new Date().getFullYear());
+
+    // function animateOnScroll() {
+    // const windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    // $('.project').each(function () {
+    // const objectMid = $(this).offset().top + $(this).innerHeight() / 2;
+
+    // $(this).removeClass('visible');
+    // if (objectMid < windowBottom) {
+    // $(this).addClass('visible');
+    // }
+    // });
+    // }
+    // animateOnScroll();
+
+    // $(window).on('scroll', animateOnScroll);
 });
-
-// Open side nav
-// function openNav() {
-//     $('#mySidenav').css('transform', 'translateX(0)');
-// }
-
-// // Close side nav
-// function closeNav() {
-//     $('#mySidenav').css('transform', 'translateX(-250px)');
-// }
-
-// // Open/ close side nav on window resize
-// function checkWidth() {
-//     return ($(window).width() > 991) ? openNav() : closeNav();
-// }
-// $(window).resize(checkWidth);
-
-// // Scrolling
-// $('.about-me').click(function(e) {
-//     if ($(window).width() < 992) {
-//         $('html, body').animate({
-//             scrollTop: $('#about').offset().top - 44
-//         }, 900, 'easeInOutExpo')
-//     } else {
-//         $('html, body').animate({
-//             scrollTop: $('#about').offset().top
-//         }, 900, 'easeInOutExpo')
-//     }
-// });
-
-// $('.projects').click(function(e) {
-//     if ($(window).width() < 992) {
-//         $('html, body').animate({
-//             scrollTop: $('#projects').offset().top - 44
-//         }, 900, 'easeInOutExpo')
-//     } else {
-//         $('html, body').animate({
-//             scrollTop: $('#projects').offset().top
-//         }, 900, 'easeInOutExpo')
-//     }
-// });
-
-// $('.experience').click(function(e) {
-//     if ($(window).width() < 992) {
-//         $('html, body').animate({
-//             scrollTop: $('#experience').offset().top - 44
-//         }, 900, 'easeInOutExpo')
-//     } else {
-//         $('html, body').animate({
-//             scrollTop: $('#experience').offset().top
-//         }, 900, 'easeInOutExpo')
-//     }
-// });
-
-// $('.contact').click(function(e) {
-//     if ($(window).width() < 992) {
-//         $('html, body').animate({
-//             scrollTop: $('#contact').offset().top - 44
-//         }, 900, 'easeInOutExpo')
-//     } else {
-//         $('html, body').animate({
-//             scrollTop: $('#contact').offset().top
-//         }, 900, 'easeInOutExpo')
-//     }
-// });
-
-// // Collapse side nav when link on click
-// $('.nav-link').click(function(e) {
-//     if ($(window).width() < 992) return closeNav();
-// });
-
-// // Menu background change on scroll
-// let targetOffset = $(".wrapper").offset().top;
-
-// let $w = $(window).scroll(function(){
-//     if ( $w.scrollTop() > targetOffset ) {   
-//         $('.menu-wrapper').css({
-//             'background': '#202528'
-//         });
-//     } else {
-//         $('.menu-wrapper').css({
-//             'background': 'transparent',
-//             'color': 'white'
-//         });
-//     }
-// });

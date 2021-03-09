@@ -1,0 +1,199 @@
+// Colors
+$blue: #268CF5;
+$dark-blue: #2F58F7;
+$light-blue: #31B1E7;
+$black: #000;
+$white: #fff;
+
+// Font colors
+$text-base: #d6d6d6;
+
+// Typography
+$font-root-size: 20px;
+$font-stack: 'MuseoSans Bold', sans-serif;
+$alt-stack: 'MuseoSans Black', sans-serif;
+$style: normal;
+
+@font-face {
+  font-family: MuseoSans Bold;
+  src: url(../fonts/MuseoSans_700.otf);
+}
+@font-face {
+  font-family: MuseoSans Black;
+  src: url(../fonts/MuseoSans_900.otf);
+}
+
+// Keyframes
+@keyframes bodyFadeIn {
+    0% {opacity:0;visibility:hidden;filter:blur(5px)}
+    100% {opacity:1;visibility:visible;filter:blur(0)}
+}
+@keyframes sectionFadeIn {
+    0% {opacity:0;visibility:hidden;transform:translateY(10px)}
+    100% {opacity:1;visibility:visible;transform:translateY(0)}
+}
+@keyframes blockquoteFadeIn {
+    0% {opacity:0;visibility:hidden;transform:translateY(-20px)}
+    100% {opacity:1;visibility:visible;transform:translateY(0)}
+}
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes toTopFromBottom {
+	49% {
+		transform: translateY(-100%);
+	}
+	50% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	51% {
+		opacity: 1;
+	}
+}
+@keyframes change {
+  0%, 12.66%, 100% {transform:translate3d(0,0,0);}
+  16.66%, 29.32% {transform:translate3d(0,-25%,0);}
+  33.32%,45.98% {transform:translate3d(0,-50%,0);}
+  49.98%,62.64% {transform:translate3d(0,-75%,0);}
+  66.64%,79.3% {transform:translate3d(0,-50%,0);}
+  83.3%,95.96% {transform:translate3d(0,-25%,0);}
+}
+
+// General
+html {
+    font-size: $font-root-size;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    height: 100%;
+    font-size: inherit;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: relative;
+    // overflow: hidden;
+    // background: #1d1e22;
+    background: #0D1117;
+    // background: url(../img/bg1.jpg) no-repeat center;
+    // background-size: cover;
+    animation: bodyFadeIn .4s ease;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+    color: $text-base;
+    font-family: $font-stack;
+    font-style: $style;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+a,
+a:visited,
+a:link {
+    font-weight:600;
+    text-decoration: none;
+    outline: none;
+    transition: all .5s ease;
+}
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+ul,
+ol {
+    clear: both
+}
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.fn {
+    float: none;
+    display: inline-block
+}
+
+.tal {
+    text-align: left
+}
+
+.tar {
+    text-align: right
+}
+
+.tac {
+    text-align: center
+}
+
+.clr-l {
+    clear: left
+}
+
+.clr-r {
+    clear: right
+}
+
+.clr,
+.clear {
+    clear: both
+}
+.nodisp {
+    display: none
+}
+.img-resp {
+    height: auto;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: $alt-stack;
+    font-weight:300;
+}
+h1 {
+    font-style: $style;
+    font-size: 3rem;
+    @include bp(md) {
+        font-size: 3.2rem;
+    }
+}
+h2 {
+    font-size: 1.75rem;
+}
+h3 {
+    font-size: 1.25rem;
+    @include bp(md) {
+        font-size: 1.75rem;
+    }
+}
+blockquote {
+    margin-bottom: 3rem;
+}
+p {
+    line-height: 1.25;
+}
+strong {
+    font-family: $alt-stack;
+    font-size: 1.5rem;
+}
+li {
+    line-height: 2;
+}
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
