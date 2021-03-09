@@ -256,6 +256,12 @@ section {
         .description {
             font-size: 1.2rem;
         }
+        .text {
+            text-align: center;
+            @include bp(lg) {
+                text-align: left;
+            }
+        }
         a {
             color: $light-blue;
             text-transform: uppercase;
@@ -263,7 +269,7 @@ section {
             &.project-link {
                 display: block;
                 margin-bottom: 2rem;
-                @include bp(md) {
+                @include bp(lg) {
                     margin-bottom: 0;
                 }
             }
