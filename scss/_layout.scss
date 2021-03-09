@@ -226,6 +226,9 @@ section {
 // }}}
 
 // #work {{{
+[data-aos="fade-up"] {
+    transform: translate3d(0, 30px, 0);
+}
 #work {
     p {
         font-size: 1.5rem;
@@ -246,15 +249,6 @@ section {
         }
     }
     .project {
-        // opacity: 0;
-        // visibility: hidden;
-        // transform: translateY(20px);
-        // transition: all .5s ease;
-        // &.visible {
-            // opacity:1;
-            // visibility: visible;
-            // transform: translateY(0);
-        // }
         margin-bottom: 6rem;
         @include bp(lg) {
             margin-bottom: 10rem;

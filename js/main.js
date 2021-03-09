@@ -37,20 +37,24 @@ jQuery(document).ready(function ($) {
         $('section#home').addClass('active').siblings().removeClass('active');
     });
 
+    // Animate on Scroll
+    AOS.init({
+        duration: 400,
+        offset: 200,
+    });
+    $(function () {
+        AOS.init();
+    });
+    $(window).on('load', function () {
+        AOS.refresh();
+    });
+
+    let scrollRef = 0;
+
+    window.addEventListener('scroll', function () {
+        // increase value up to 10, then refresh AOS
+        scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+    });
+
     // $('#year').text(new Date().getFullYear());
-
-    // function animateOnScroll() {
-    // const windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    // $('.project').each(function () {
-    // const objectMid = $(this).offset().top + $(this).innerHeight() / 2;
-
-    // $(this).removeClass('visible');
-    // if (objectMid < windowBottom) {
-    // $(this).addClass('visible');
-    // }
-    // });
-    // }
-    // animateOnScroll();
-
-    // $(window).on('scroll', animateOnScroll);
 });
