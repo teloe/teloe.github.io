@@ -5,7 +5,6 @@ button.gradient-btn {
     font-family: $alt-stack;
     display: inline-block;
     width: 200px;
-    // margin: 2rem auto;
     margin: 1rem;
     color: $text-base;
     cursor:pointer;
@@ -98,14 +97,14 @@ button.gradient-btn {
         .inner {
             transform: rotateX(180deg) rotateY(180deg);
             background-color: transparent !important;
-            background: #31b1e7;
+            background: $light-blue;
             &::before {
                 transform:translate3d(0,10px,0) rotate(45deg);
-                background: #31b1e7;
+                background: $light-blue;
             }
             &::after {
                 transform:translate3d(0,-10px,0) rotate(-45deg);
-                background: #31b1e7;
+                background: $light-blue;
             }
         }
     }
@@ -121,7 +120,7 @@ button.gradient-btn {
             position: absolute;
             width: 40px;
             height: 2px;
-            background: #31b1e7;
+            background: $light-blue;
             transition: transform .15s cubic-bezier(.645,.045,.355,1),background-color 0s cubic-bezier(.645,.045,.355,1) .1s;
             &::before, &::after {
                 content: '';
@@ -129,7 +128,7 @@ button.gradient-btn {
                 position: absolute;
                 width: 40px;
                 height: 2px;
-                background: #31b1e7;
+                background: $light-blue;
             }
             &::before {
                 top: -10px;

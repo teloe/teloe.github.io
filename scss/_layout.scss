@@ -1,6 +1,5 @@
 // header {{{
 header {
-    // background:#195A4A;
     padding: 4rem 0;
     max-width: 1100px;
     margin: 0 auto;
@@ -105,8 +104,11 @@ nav {
                 font-family: $alt-stack;
                 text-transform:uppercase;
                 position: relative;
-                color: #31B1E7;
+                color: $light-blue!important;
                 padding: 1rem;
+                &:hover {
+                    color: $dark-blue!important;
+                }
             }
         }
     }
