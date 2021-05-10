@@ -35,25 +35,49 @@ button.gradient-btn {
 
 .project-links {
     margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include bp(lg) {
+        justify-content: flex-start;
+    }
     .project-btn {
-        display:inline-block;
+        display:flex;
+        align-items: center;
+        justify-content: center;
         text-transform: uppercase;
+        text-align: center;
+        width: 60px;
+        height: 60px;
         font-family: $alt-stack;
         color: $dark-blue;
         position: relative;
-        padding: .25rem;
         font-size: 1.2rem;
         z-index: 1;
         transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
         &:first-of-type {
-            margin-bottom: 1rem;
+            margin-right: .5rem;
+            &::before {
+                font-size: 2rem;
+                content: '\f35d';
+                font-family: 'Font Awesome 5 Free';
+                font-weight:900;
+            }
+        }
+        &:last-of-type {
+            &::before {
+                font-size: 2rem;
+                content: '\f09b';
+                font-family: 'Font Awesome 5 Brands';
+                font-weight:900;
+            }
         }
         &::after {
             content: '';
             position: absolute;
             bottom: 0;
             left: 0;
-            height: 3px;
+            height: 0px;
             width: 100%;
             background-color: $dark-blue;
             z-index: -1;
@@ -140,4 +164,3 @@ button.gradient-btn {
     }
 }
 
-//Nav
