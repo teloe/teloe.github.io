@@ -302,6 +302,11 @@ section {
                 left: 0;
             }
         }
+        &:nth-of-type(5) {
+            @include bp(lg) {
+                margin-bottom: 13rem;
+            }
+        }
         @include bp(lg) {
             margin-bottom: 10rem;
         }
@@ -311,8 +316,6 @@ section {
         .text {
             text-align: center;
             margin-top: 2rem;
-            // background-color: rgba(17,23,44, .9);
-            // padding: 2rem 1rem;
             @include bp(lg) {
                 background-color: rgba(17,23,44, .9);
                 position: absolute;
@@ -440,41 +443,6 @@ section {
         }
         @include bp(md) {
             font-size: 2rem;
-        }
-    }
-    .link-info {
-        display:block;
-        margin: 1rem 0;
-        text-transform: uppercase;
-    }
-    .gradient-btn {
-        // font-size: .9rem;
-        &::before {
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            margin-right: .5rem;
-        }
-        &:nth-of-type(1){
-            &::before {
-                content: '\f1c1';
-            }
-        }
-        &:nth-of-type(2){
-            &::before {
-                content: '\f0e0';
-            }
-        }
-        &:nth-of-type(3){
-            &::before {
-                content: '\f09b';
-                font-family: 'Font Awesome 5 Brands';
-            }
-        }
-        &:nth-of-type(4){
-            &::before {
-                content: '\f0e1';
-                font-family: 'Font Awesome 5 Brands';
-            }
         }
     }
 }
