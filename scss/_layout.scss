@@ -17,7 +17,7 @@ header {
     h1, h3 {
         line-height:1;
         font-family: $alt-stack;
-        background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+        background: linear-gradient(54.4deg, $blue 50%, $dark-blue 89.55%);
         background-clip: border-box;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -47,7 +47,7 @@ header {
     z-index: 9;
     opacity: 0;
     visibility: hidden;
-    background: rgba(#000, .1);
+    // background: rgba(#000, .1);
     transition: all .3s ease;
     &.active {
         opacity:1;
@@ -104,10 +104,10 @@ nav {
                 font-family: $alt-stack;
                 text-transform:uppercase;
                 position: relative;
-                color: $light-blue!important;
+                // color: $light-blue!important;
                 padding: 1rem;
                 &:hover {
-                    color: $dark-blue!important;
+                    color: $light-blue!important;
                 }
             }
         }
@@ -135,14 +135,14 @@ section {
 // #home {{{
 #home {
     .col {
-        text-align: center;
+        // text-align: center;
         @include bp(lg) {
             text-align: left;
             padding-top: 4rem;
         }
     }
     h2 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         margin-bottom: 2rem;
         @include bp(xs) {
             font-size: 2.5rem;
@@ -151,24 +151,29 @@ section {
     }
     h3 {
         // font-size: 1.1rem;
-        font-size: 7vw;
+        font-size: 5.9vw;
         line-height: 1.5;
         @include bp(md) {
             font-size: 2.4rem;
         }
         &:last-of-type {
-            @include bp(lg) {
-                display:inline;
-                vertical-align: top;
+            display:inline-block;
+            margin-bottom: 0;
+            line-height: 2;
+            position: relative;
+            top: -2.25vw;
+            @include bp(md) {
+                top: -.9rem;
+                line-height: 1.5;
             }
         }
     }
     .list-container {
         overflow: hidden;
         // height: 40px;
-        height: 12vw;
+        height: 10vw;
+        display:inline-block;
         @include bp(md) {
-            display:inline-block;
             height: 70px;
         }
     }
@@ -177,13 +182,16 @@ section {
         list-style: none;
         // text-align: left;
         overflow: hidden;
-        padding-left: .5rem;
+        padding-left: 1vw;
         animation-name: change;
         animation-duration: 10s;
         animation-iteration-count: infinite;
+        @include bp(md) {
+            padding-left: .5rem;
+        }
         li {
             // font-size: 1.1rem;
-            font-size: 7vw;
+            font-size: 5.8vw;
             line-height:2;
             font-family: $alt-stack;
             @include bp(md) {
@@ -216,7 +224,7 @@ section {
             height: 100%;
             width: 100%;
             max-width: 200px;
-            background: linear-gradient(54.4deg, #31B1E7 10.45%, #268CF5 50%, #2F58F7 89.55%);
+            background: linear-gradient(54.4deg, $light-blue 10.45%, $blue 50%, $dark-blue 89.55%);
             z-index: -1;
         }
     }
@@ -241,6 +249,24 @@ section {
             margin-bottom: 4rem;
         }
     }
+    .gh {
+        position: relative;
+        &::after {
+            content: '';
+            background: $dark-blue;
+            height: 2px;
+            width: 0;
+            display: block;
+            position: absolute;
+            left: 0;
+            transition: all .5s cubic-bezier(.19,1,.22,1);
+        }
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
     h3 {
         font-size: 2rem;
     }
@@ -248,6 +274,7 @@ section {
         @include bp(md) {
             display: flex;
             align-items: center;
+            position: relative;
         }
     }
     .project {
@@ -261,13 +288,17 @@ section {
         .text {
             text-align: center;
             @include bp(lg) {
+                background-color: rgba(47,88,247,.6);
+                position: absolute;
+                max-width: 450px;
+                padding: 2rem;
+                z-index: 2;
+            }
+            @include bp(lg) {
                 text-align: left;
             }
         }
         a {
-            // color: $light-blue;
-            // text-transform: uppercase;
-            // font-size: 1.2rem;
             &.project-link {
                 display: block;
                 margin-bottom: 2rem;
@@ -286,11 +317,6 @@ section {
             }
         }
     }
-    // a {
-        // &:hover {
-            // text-decoration: underline;
-        // }
-    // }
 }
 
 // }}}
@@ -412,19 +438,6 @@ section {
                 font-family: 'Font Awesome 5 Brands';
             }
         }
-    }
-}
-// }}}
-
-// footer {{{
-footer {
-    position: absolute;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    #copyright {
-        font-size: .875rem;
     }
 }
 // }}}

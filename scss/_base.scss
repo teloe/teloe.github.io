@@ -10,16 +10,16 @@ $text-base: #d6d6d6;
 
 // Typography
 $font-root-size: 20px;
-$font-stack: 'MuseoSans Bold', sans-serif;
-$alt-stack: 'MuseoSans Black', sans-serif;
+$font-stack: 'MuseoSansBold', sans-serif;
+$alt-stack: 'MuseoSansBlack', sans-serif;
 $style: normal;
 
 @font-face {
-  font-family: MuseoSans Bold;
+  font-family: MuseoSansBold;
   src: url(../fonts/MuseoSans_700.otf);
 }
 @font-face {
-  font-family: MuseoSans Black;
+  font-family: MuseoSansBlack;
   src: url(../fonts/MuseoSans_900.otf);
 }
 
@@ -67,6 +67,7 @@ body {
     overflow-y: scroll;
     position: relative;
     background: #0D1117;
+    // background: #0C0D12;
     animation: bodyFadeIn .4s ease;
     animation-delay: .2s;
     animation-fill-mode: both;
@@ -88,7 +89,7 @@ a:link {
     transition: all .5s ease;
 }
 a:hover {
-    color: $light-blue;
+    color: $dark-blue;
     text-decoration: none;
     outline: none;
 }
