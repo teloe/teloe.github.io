@@ -67,7 +67,7 @@ body {
     overflow-y: scroll;
     position: relative;
     background: #0D1117;
-    // background: #0C0D12;
+    // background: linear-gradient(#08070D, #37266C);
     animation: bodyFadeIn .4s ease;
     animation-delay: .2s;
     animation-fill-mode: both;
@@ -81,7 +81,7 @@ body {
 a,
 a:visited,
 a:link {
-    color: $dark-blue;
+    color: $blue;
     font-family: $alt-stack;
     font-weight:700;
     text-decoration: none;
