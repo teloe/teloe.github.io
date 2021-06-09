@@ -253,9 +253,10 @@ section {
 }
 #work {
     p {
-        font-size: 1.5rem;
+        font-size: 1.625rem;
+        font-family: $alt-stack;
         @include bp(lg) {
-            font-size: 2.1rem;
+            font-size: 2.4rem;
         }
         &.text-center {
             margin-bottom: 4rem;
@@ -317,9 +318,10 @@ section {
             text-align: center;
             margin-top: 2rem;
             @include bp(lg) {
-                background-color: rgba(17,23,44, .9);
                 position: absolute;
+                background-color: rgba(17,23,44, .9);
                 max-width: 450px;
+                width: 100%;
                 padding: 2rem;
                 z-index: 2;
                 text-align: left;
