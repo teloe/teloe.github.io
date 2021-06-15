@@ -16,9 +16,7 @@ jQuery(document).ready(function ($) {
     $('.close-overlay, nav a').on('click', closeMenu);
 
     $(document).keyup(function (e) {
-        if (e.keyCode === 27) {
-            return closeMenu();
-        }
+        if (e.keyCode === 27) closeMenu();
     });
 
     $('main section:first-of-type').addClass('active');

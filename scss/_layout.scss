@@ -128,7 +128,7 @@ section {
     display:none;
     &.active {
         display: block;
-        animation: sectionFadeIn .3s ease;
+        animation: fadeInUp .3s ease;
         animation-fill-mode:both;
     }
 }
@@ -145,7 +145,7 @@ section {
     h2 {
         font-size: 4.5rem;
         margin-bottom: 2rem;
-        animation: sectionFadeIn .4s ease;
+        animation: fadeInUp .4s ease;
         animation-delay: .5s;
         animation-fill-mode: both;
         @include bp(xs) {
@@ -157,7 +157,7 @@ section {
         // font-size: 1.1rem;
         font-size: 5.9vw;
         line-height: 1.5;
-        animation: sectionFadeIn .4s ease;
+        animation: fadeInUp .4s ease;
         animation-delay: 1s;
         animation-fill-mode: both;
         @include bp(md) {
@@ -180,7 +180,7 @@ section {
         // height: 40px;
         height: 10vw;
         display:inline-block;
-        animation: sectionFadeIn .4s ease;
+        animation: fadeInUp .4s ease;
         animation-delay: 1s;
         animation-fill-mode: both;
         @include bp(md) {
