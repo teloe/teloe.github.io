@@ -7,10 +7,10 @@
     color: $dark-blue!important;
     border: solid 2px $dark-blue;
     padding: 1rem .5rem;
-    width: 180px;
+    width: 200px;
     margin: 1rem .5rem;
     position: relative;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     border-radius: 0;
     z-index: 1;
     transition: all .15s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -33,6 +33,7 @@
     }
     &:focus {
         outline: none!important;
+        box-shadow:none;
     }
 }
 
